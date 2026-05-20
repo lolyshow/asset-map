@@ -37,11 +37,11 @@ export default function HomePage() {
       </h1>
 
       <div className="grid lg:grid-cols-[320px_1fr] gap-6">
-        {/* <AssetPanel
+        <AssetPanel
           assets={assets}
           onMove={moveAsset}
-        /> */}
-
+        />
+        <div className="py-[5px]"></div>
         <CampusMap assets={assets} />
       </div>
     </main>

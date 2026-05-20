@@ -1,6 +1,5 @@
 import { buildings } from "@/data/buildings";
 import { Asset } from "@/types";
-import AssetIcon from "./AssetIcon";
 
 type Props = {
   assets: Asset[];
