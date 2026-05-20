@@ -20,7 +20,7 @@ export default function CampusMap({ assets }: any) {
 
         return (
           <div
-            key={b.id}
+            key={b?.id}
             className="absolute bg-white/90  rounded-2xl shadow-lg p-4 w-56"
             style={{
               left: `${b.x * 100}%`,
@@ -31,9 +31,8 @@ export default function CampusMap({ assets }: any) {
             <div className="flex flex-wrap gap-2 mt-2">
               {buildingAssets.map((a: any) => (
                 <div
-                  key={a.id}
-                  className="text-[200px] px-2 py-1 rounded
-             animate-[flicker_1.5s_infinite]"
+                  key={`${b.id}-${a.id}`}
+                  className="text-[200px] px-2 py-1 rounded animate-[flicker_1.5s_infinite]"
                 >
                   💡
                 </div>
