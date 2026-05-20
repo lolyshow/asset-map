@@ -32,7 +32,7 @@ export default function CampusMap({ assets }: any) {
               {buildingAssets.map((a: any) => (
                 <div
                   key={`${b.id}-${a.id}`}
-                  className="text-[200px] px-2 py-1 rounded animate-[flicker_1.5s_infinite]"
+                  className="text-[200px] px-2 py-1 rounded "
                 >
                   💡
                 </div>
