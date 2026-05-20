@@ -29,7 +29,7 @@ export default function CampusMap({
       {/* ONLY ONE BULB */}
       {activeAsset && building && (
         <div
-          className="absolute text-6xl animate-pulse"
+          className="absolute text-[200px] animate-pulse "
           style={{
             left: `${building.x * 100}%`,
             top: `${building.y * 100}%`,
