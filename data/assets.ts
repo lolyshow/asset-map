@@ -11,9 +11,9 @@ export const starterAssets: Asset[] = [
     name: "Microscope #3",
     buildingId: "b",
   },
-  {
-    id: "3",
-    name: "Microscope #4",
-    buildingId: "b",
-  },
+  // {
+  //   id: "3",
+  //   name: "Microscope #4",
+  //   buildingId: "c",
+  // },
 ]
