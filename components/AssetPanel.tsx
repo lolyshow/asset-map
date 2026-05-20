@@ -12,9 +12,6 @@ export default function AssetPanel({
 }: Props) {
   return (
     <div className="bg-white border rounded-2xl  shadow-lg">
-      <h2 className="text-xl font-bold mb-1">
-        Current Lamp Location
-      </h2>
 
       <div className="space-y-2">
         {assets.map((asset) => (
