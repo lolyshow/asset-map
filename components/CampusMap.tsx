@@ -35,6 +35,7 @@ export default function CampusMap({ assets }: any) {
                 // >
                 //   💡
                 // </div>
+                <></>
               ))}
             </div>
           </div>
