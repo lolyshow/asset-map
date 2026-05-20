@@ -11,20 +11,17 @@ export default function AssetPanel({
   onMove,
 }: Props) {
   return (
-    <div className="bg-white border rounded-2xl p-4 shadow-lg">
-      <h2 className="text-xl font-bold mb-4">
-        Assets
+    <div className="bg-white border rounded-2xl  shadow-lg">
+      <h2 className="text-xl font-bold mb-1">
+        Current Lamp Location
       </h2>
 
-      <div className="space-y-4">
+      <div className="space-y-2">
         {assets.map((asset) => (
           <div
             key={asset.id}
-            className="border rounded-xl p-3"
+            className="border rounded-xl "
           >
-            <div className="font-semibold">
-              {asset.name}
-            </div>
 
             <select
               className="mt-2 w-full border rounded p-2"
