@@ -22,9 +22,9 @@ export default function AssetPanel({
             key={asset.id}
             className="border rounded-xl p-3"
           >
-            <div className="font-semibold">
+            {/* <div className="font-semibold">
               {asset.name}
-            </div>
+            </div> */}
 
             <select
               className="mt-2 w-full border rounded p-2"
