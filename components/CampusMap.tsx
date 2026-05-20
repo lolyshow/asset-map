@@ -29,13 +29,12 @@ export default function CampusMap({ assets }: any) {
           >
             <div className="flex flex-wrap gap-2 mt-2">
               {buildingAssets.map((a: any) => (
-                // <div
-                //   key={`${b.id}-${a.id}`}
-                //   className="text-[200px] px-2 py-1 rounded "
-                // >
-                //   💡
-                // </div>
-                <></>
+                <div
+                  key={`${b.id}-${a.id}`}
+                  className="text-[200px] px-2 py-1 rounded "
+                >
+                  💡
+                </div>
               ))}
             </div>
           </div>
