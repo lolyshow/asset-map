@@ -10,32 +10,29 @@ export default function AssetPanel({
   assets,
   onMove,
 }: Props) {
+  const asset = assets[0]
+
+  if (!asset) return null
+
   return (
-    <div className="bg-white border rounded-2xl  shadow-lg">
+    <div className="bg-white border rounded-2xl p-4 shadow-lg">
+      <h2 className="text-xl font-bold mb-4">
+        Move Light Bulb
+      </h2>
 
-      <div className="space-y-2">
-        {assets.map((asset) => (
-          <div
-            key={asset.id}
-            className="border rounded-xl "
-          >
-
-            <select
-              className="mt-2 w-full border rounded p-2"
-              value={asset.buildingId}
-              onChange={(e) =>
-                onMove(asset.id, e.target.value)
-              }
-            >
-              {buildings.map((b) => (
-                <option key={b.id} value={b.id}>
-                  {b.name}
-                </option>
-              ))}
-            </select>
-          </div>
+      <select
+        className="w-full border rounded p-2"
+        value={asset.buildingId}
+        onChange={(e) =>
+          onMove(asset.id, e.target.value)
+        }
+      >
+        {buildings.map((b) => (
+          <option key={b.id} value={b.id}>
+            {b.name}
+          </option>
         ))}
-      </div>
+      </select>
     </div>
   )
 }
